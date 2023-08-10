@@ -1,0 +1,6 @@
+- name: Deploy Jenkins on EC2
+  hosts: jenkins_servers
+  become: yes
+  gather_facts: yes
+  roles:
+    - geerlingguy.jenkins
